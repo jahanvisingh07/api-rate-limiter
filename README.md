@@ -5,14 +5,15 @@ API Rate Limiter: The Digital Bouncer 🛑
 Unrestricted traffic spikes can easily overwhelm backend systems and degrade user experience. This project serves as a custom API rate limiter built with Node.js and Express, designed to act as a middleware "bouncer." It monitors incoming traffic and temporarily blocks users who exceed request thresholds, ensuring the backend remains stable and responsive.
 
 🚀 Try It Live
+
 You can test the rate limiter in action right now directly in your browser:
 
-Click the Live Demo badge above (or navigate to  https://api-rate-limiter-ver1.onrender.com
+  - Click the Live Demo badge above (or navigate to  https://api-rate-limiter-ver1.onrender.com
 ).
 
-Rapidly refresh the page 6 times.
+  - Rapidly refresh the page 6 times.
 
-Watch the system intercept the 6th request with a 429 Too Many Requests block.
+  - Watch the system intercept the 6th request with a 429 Too Many Requests block.
 
 🧠 How It Works Under the Hood
 The Rule: A user is permitted exactly 5 requests every 60 seconds.
