@@ -15,7 +15,7 @@ You can test the rate limiter in action right now directly in your browser:
   - Rapidly refresh the page 6 times.
 
   - Watch the system intercept the 6th request with a 429 Too Many Requests block.
-  - 
+   
 
 🧠 How It Works Under the Hood
   - The Rule: A user is permitted exactly 5 requests every 60 seconds.
@@ -27,7 +27,7 @@ You can test the rate limiter in action right now directly in your browser:
   - The Block: If an IP hits the route 6 times within a minute, the system intercepts the request and returns the 429 error before it can hit the main server.
 
   - The Cleanup: To prevent memory leaks, an asynchronous timer automatically clears the user's record after the 60-second window closes.
-  - 
+    
 
 🛠️ Tech Stack
 
@@ -36,6 +36,7 @@ You can test the rate limiter in action right now directly in your browser:
   - Deployment: Render (Web Service)
 
   - Architecture: Middleware pattern, In-memory data store
+    
 
 🔮 Architecture & Future Scope
 
